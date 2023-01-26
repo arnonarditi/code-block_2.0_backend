@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Async Func",
+        "code": "Code for it",
+        "difficulty": "easy",
+        "solution": "async function query(){ return await httpService.get('code')    }"
+    },
+    {
+        "title": "Debounce",
+        "code": "Code for it",
+        "difficulty": "medium",
+        "solution": "function debounce(func, timeout = 500){   let timer   return (...args) => {   clearTimeout(timer   timer = setTimeout(() => { func.apply(this, args) }, timeout)      }  }"
+    },
+    {
+        "title": "Is Duplicate",
+        "code": "Code for it",
+        "difficulty": "hard",
+        "solution": "function isDuplicate(arr) {    var inventory = {}  for (var i = 0; i < arr.length; i++) { if (inventory[arr[i]]) return true      else inventory[arr[i]] = 1  }      return false   }"
+    },
+    {
+        "title": "Get Next",
+        "code": "Code for it",
+        "difficulty": "medium",
+        "solution": "function getNext(n) {   var newNum = 0 while (n) {   newNum += (n % 10) ** 2      n = Math.floor(n / 10)   }  return newNum  }"
+    },
+    {
+        "title": "Factorial",
+        "code": "Code for it",
+        "difficulty": "easy",
+        "solution": "function factorial(num) { if (num === 1) return num    return num * factorial(num - 1)  }"
+    },
+    {
+        "title": "Get Sum",
+        "code": "Code for it",
+        "difficulty": "medium",
+        "solution": "function sum(arr) {  return arr.reduce((acc, curr) => acc + curr)}"
+    },
+    {
+        "title": "Console It",
+        "code": "Code for it",
+        "difficulty": "easy",
+        "solution": "function consoleIt(payload){  console.log(payload)  }"
+    },
+    {
+        "title": "Is Missing",
+        "code": "Code for it",
+        "difficulty": "hard",
+        "solution": "function missing(nums) {    var idxCounter = 0  const valCounter = nums.reduce((acc, curr, idx) => {     idxCounter += idx + 1       return acc + curr    }, 0)      return idxCounter - valCounter  }"
+    },
+    {
+        "title": "Prefix",
+        "code": "Code for it",
+        "difficulty": "medium",
+        "solution": "function prefix(strs) { var prefix = strs[0]   for (var i = 1; i < strs.length; i++) {   while (strs[i].indexOf(prefix)) {     prefix = prefix.substring(0, prefix.length - 1)     if (!prefix) return ''     }      }      return prefix    }"
+    },
+    {
+        "title": "Follow-Up",
+        "code": "Code for it",
+        "difficulty": "hard",
+        "solution": "function followUp(nums) {    var numsMap = {} var number = nums[0] nums.forEach(num => { if (numsMap[num]) numsMap[num]++  else numsMap[num] = 1    if (numsMap[num] > numsMap[number]) number = num    })     return number }"
+    },
+    {
+        "title": "Multiple",
+        "code": "Code for it",
+        "difficulty": "easy",
+        "solution": "function multiple(num, multi) { if (multi === 1) return num     return num + multiple(num, multi - 1) }"
+    },
+    {
+        "title": "Count Ways",
+        "code": "Code for it",
+        "difficulty": "hard",
+        "solution": "function countWays(n) {   if (n < 0) return 0   if (n === 0) return 1    return countWays(n - 1) + countWays(n - 2) + countWays(n - 3) }"
+    }
+]
